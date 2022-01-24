@@ -35,7 +35,7 @@ jobs:
       with:
         project: ${{ github.repository }}-PR
         #team: ${{ secrets.CHECKMARX_TEAMS }}
-        team: CxServer\\SP
+        team: "CxServer"
         checkmarx_url: ${{ secrets.CHECKMARX_URL }}   # To be stored in GitHub Secrets.
         checkmarx_username: ${{ secrets.CHECKMARX_USERNAME }}  # To be stored in GitHub Secrets.
         checkmarx_password: ${{ secrets.CHECKMARX_PASSWORD }}  # To be stored in GitHub Secrets.
