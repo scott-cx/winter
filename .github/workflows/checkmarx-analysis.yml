@@ -15,8 +15,8 @@ name: CxFlow-GitHub-Pull-Request
 
 # Controls when the action will run. Triggers the workflow on push or pull request events but only for the master branch
 on:
-  pull_request:
-    types: [opened, reopened, synchronize] #Types specify which pull request events will trigger the workflow. For more events refer Github Actions documentation.
+  push:
+    # types: [opened, reopened, synchronize] #Types specify which pull request events will trigger the workflow. For more events refer Github Actions documentation.
     branches:
     - master
     - main
