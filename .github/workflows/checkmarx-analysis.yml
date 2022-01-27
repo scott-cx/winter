@@ -30,8 +30,10 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.client_payload.pull_request.head.sha }}
     - name: Checkmarx CxFlow Action
-      uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.3
+      uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.4
       with:
         project: ${{ github.repository }}-PR
         team: ${{ secrets.CHECKMARX_TEAMS }}
